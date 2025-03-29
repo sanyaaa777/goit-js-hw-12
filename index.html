@@ -1,33 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Search Image</title>
-    <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
-    <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-Db2TdIkw.js">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CWKLx11g.css">
-    <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-nEOyrE20.css">
-  </head>
-  <body>
-    <header>
-      <form class="form" id="search-form">
-        <input
-          type="text"
-          id="search-input"
-          placeholder="Search images..."
-          required
-        />
-        <button type="submit">Search</button>
-      </form>
-    </header>
 
-    <div id="loader" class="loader" style="display: none"></div>
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="/goit-js-hw-12/favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Search Image App</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/modern-normalize@2.0.0/modern-normalize.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
+  <script type="module" crossorigin src="/goit-js-hw-12/index.js"></script>
+  <link rel="modulepreload" crossorigin href="/goit-js-hw-12/assets/vendor-Db2TdIkw.js">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/vendor-CWKLx11g.css">
+  <link rel="stylesheet" crossorigin href="/goit-js-hw-12/assets/index-DuzsCEJq.css">
+</head>
 
-    <ul class="gallery"></ul>
+<body>
 
-    <button id="load-more" style="display: none">Load more</button>
+  <main>
+    <form class="form">
+      <input id="input" class="input-search" type="text" placeholder="Search images...">
+      <button class="btn-search" type="submit">Search</button>
+    </form>
 
-  </body>
+    <p id="loading-message" style="display: none;">Loading images, please wait...</p>
+
+    <div>
+      <ul class="gallery"></ul>
+    </div>
+
+    <button id="load-more-btn" style="display: none;">Load more</button>
+  </main>
+
+  <span class="loader"></span>
+
+</body>
+
 </html>
